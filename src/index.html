@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HILTI POC</title>
+</head>
+
+<body>
+	<table class="table_left">
+		<tr class="title">
+			<h1 id ="web_header">Live Data Monitor</h1>
+			<th class="firstColumn" class="th_left">
+				<div>
+					<!-- First Button for switching to LIVE VIEW -->
+					<button class="button_left" id="liveViewButton">LIVE VIEW</button>
+				</div>
+				<div>
+					<!-- Second Button for switching to DATA ANALYSING -->
+					<button class="button_left" id="dataAnalysingButton">DATA ANALYSING</button>
+				</div>
+				<div>
+					<!-- Third Button for ZOOM IN in the DATA ANALYSING VIEW -->
+					<button class="button_left" id="zoomInButton">ZOOM IN</button>
+				</div>
+				<div>
+					<!-- Thourth Button for ZOOM OUT in the DATA ANALYSING VIEW -->
+					<button class="button_left" id="zoomOutButton">ZOOM OUT</button>
+				</div>
+			</th>
+			<th class="secondColumn" class="th_left">
+				<!-- GRAPH Area using Chart.js -->
+				<canvas id="rpmChart" width="720" height="280"></canvas>
+				<h2>rpm in 1/s</h2>
+			</th>
+		</tr>
+	</table>
+	<div id="overlay">
+		<button id="closeOverlayButton">X</button>
+		<table id="overlayTable"></table>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+/* Header */
+h1 {
+    text-align: center;
+    font-size: 250%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Graph legend */
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Table */
+.table_left,
+.th_left,
+.td_left {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+}
+
+.firstColumn {
+    width: 20%;
+    height: 100%;
+}
+
+.secondColumn {
+    width: 80%;
+    height: 100%;
+}
+
+.button_left {
+    width: 100%;
+    height: 200px;
+}
+
+#overlay {
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+}
+
+#overlayTable {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    z-index: 3;
+}
+
+.overlay_buttons {
+    margin: 10px;
+    width: 150px;
+}
+
+#closeOverlayButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: x-large;
+}
