@@ -1,2 +1,2 @@
-# HILTI-POC-GUI
- 
+# motorSpeedControllerGui
+This is an example GUI project for embedded IoT projects.
